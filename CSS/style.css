@@ -1,0 +1,68 @@
+/*GENERAL*/
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*CONTENEUR TODOLIST*/
+#todolist-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+
+#todolist-container > h1 {
+    text-align: center;
+
+}
+
+
+/*FORMULAIRE*/
+#form-add-todo {
+    margin: 20px;
+    text-align: center;
+
+
+
+}
+
+#form-add-todo > input{
+    width: 45vw;
+
+}
+
+.error{
+    display: none;
+    text-align: center;
+    font-size: 0.7rem;
+    color: red;
+    font-weight: bold;
+
+
+}
+
+/*TODOLIST*/
+
+#todolist{
+    padding: 20px;
+}
+
+#todolist .todo [type=checkbox]:checked +label{
+text-decoration: line-through;
+}
+
+
+#todolist .todo{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+}
+
+#todolist .todo:not(:last-child){
+    border-bottom: 1px solid #000;
+}
